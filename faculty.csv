@@ -1,9 +1,1 @@
 facultyID,fullName,email,program,department,semester,section
-F001,Dr. Anand,anand@example.com,B.Tech,CSE,1,A
-F001,Dr. Anand,anand@example.com,B.Tech,CSE,1,B
-F001,Dr. Anand,anand@example.com,B.Tech,CSE,2,B
-F001,Dr. Anand,anand@example.com,B.Tech,CSE,4,D
-F002,Dr. Sir,anand@example.com,B.Sc,Humanities,4,D
-F001,Dr. Anand,anand@example.com,B.CA,CS,4,D
-F002,Dr. Sir,anand@example.com,B.Tech,CSE,4,D
-
