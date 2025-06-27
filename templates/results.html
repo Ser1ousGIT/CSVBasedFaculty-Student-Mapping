@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapping Results</title>
+    <style>
+        body { font-family: Arial; margin: 40px; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #aaa; padding: 8px; text-align: left; }
+        th { background-color: #f0f0f0; }
+        h3 { margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <h2>Faculty to Section Mapping</h2>
+    {% for faculty, sections in faculty_to_sections.items() %}
+        <h3>{{ faculty[1] }} ({{ faculty[0] }})</h3>
+        <ul>
+            {% for section in sections %}
+                <li>{{ section[0] }} - {{ section[1] }} - Sem {{ section[2] }} - Section {{ section[3] }}</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+
+    <hr>
+
+    <h2>Section to Faculty Mapping</h2>
+    {% for section, faculties in section_to_faculties.items() %}
+        <h3>{{ section[0] }} - {{ section[1] }} - Sem {{ section[2] }} - Section {{ section[3] }}</h3>
+        <ul>
+            {% for faculty in faculties %}
+                <li>{{ faculty[1] }} ({{ faculty[0] }})</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</body>
+</html>
