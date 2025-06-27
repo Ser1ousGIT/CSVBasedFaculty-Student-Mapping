@@ -26,13 +26,17 @@ This is a web-based utility that maps faculty members to the student sections th
 
 - Use the headers from the **faculty.csv** and **student.csv** to avoid errors or change the code to match your needs. For our code these headers are the ones that are the most relevant and allow us to make unique pairings precisely.
 - Install Flask
-
-'''
-pip install Flask
-'''
-
+  ```bash
+  pip install Flask
+  ```
 - Run python on whatever host you'd like to use, easiest would be:
+  ```bash
+  python mapping.py
+  ```
+  Visit: [http://localhost:5000](http://localhost:5000)
 
-  pyton mapping.py
-  localhost:5000
+---
 
+Developed by [Ser1ous/AnandSwaroop]
+
+---
